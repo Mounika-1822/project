@@ -827,12 +827,6 @@ ul li {
 .footer-link:hover {
   color: #0066FF;
 }
-/* Global Styles */
-body {
-  margin: 0;
-  font-family: Poppins, sans-serif;
-}
-
 .container {
   width: 90%;
   max-width: 1200px;
@@ -891,7 +885,7 @@ body {
 
 /* Hamburger Menu (Three Dots) */
 .hamburger {
-  display: none; /* Hide on laptop and larger screens */
+  display: none; /* Hidden by default on laptop and larger screens */
   cursor: pointer;
 }
 
@@ -924,65 +918,11 @@ body {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Black Header */
-.black-header {
-  background-color: #000;
-  color: #fff;
-  padding: 15px 0;
-  display: flex;
-  align-items: center;
-  line-height: 1.5;
-  min-height: 35px;
-  justify-content: space-between;
-  position: relative; /* Always visible */
-}
-
-.black-header .header-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.black-header .contact-info ul {
-  display: flex;
-  font-weight: 400;
-  font-size: 1.5rem;
-  gap: 50px;
-  margin-right: 50px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.black-header .contact-info ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.black-header .social-links {
-  display: flex;
-  margin-left: 20px;
-  gap: 40px;
-}
-
-.black-header .social-links a {
-  color: #fff;
-  font-size: 17.5px;
-  color: #cccccc;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.black-header .social-links a:hover {
-  color: #ff3500;
-}
-
 /* Mobile Responsive Adjustments */
 @media (max-width: 768px) {
-  /* White Header Menu */
+  /* Hide menu on mobile */
   .white-header .menu {
-    display: none; /* Hide the menu on mobile */
+    display: none; /* Initially hidden on mobile */
     flex-direction: column;
     gap: 10px;
     width: 100%;
@@ -994,13 +934,9 @@ body {
     display: block;
   }
 
-  /* Display black header when hamburger menu is toggled */
-  #menu-toggle:checked ~ .black-header {
-    display: flex; /* Show black header when toggled */
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  /* When the hamburger is clicked, show the menu */
+  #menu-toggle:checked ~ .menu {
+    display: flex; /* Show menu when checkbox is checked */
   }
 
   /* Adjust mobile display of header items */
