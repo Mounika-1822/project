@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elements</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+.background {
+    height: 400px;
+    background-image: url('./cat\ banner.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+        
+.content-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    }
+        
+.content-1 h1 {
+    color: white;
+    font-size: 4rem;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+.some{
+    margin-top: 90px;
+}
+.some h2{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: start;
+    margin-left: 100px;
+    color: black;
+}    
+.some p{
+    font-size: 16px;
+    text-align: start;
+    margin-left: 100px;
+    color: gray;
+}   
+.button-group {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .btn-info {
+    background-color: #17a2b8;
+    color: #fff;
+  }
+  
+  .btn-warning {
+    background-color: #ffc107;
+    color: #fff;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .btn-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .btn-disabled {
+    background-color: #eee;
+    color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  .btn-outline {
+    background-color: transparent;
+    color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-rounded {
+    border-radius: 20px;
+  }
+   </style>
+</head>
+<body>
+    <header class="header black-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="contact-info">
+                    <ul>
+                        <li><a href="#">+880 4664 216</a></li>
+                        <li><a href="#">Mon - Sat 10:00 - 7:00</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header class="header white-header sticky-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html"><img src="./logo header.png" alt="Logo"></a>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li>
+                            <a href="#">Blog <i class="fas fa-angle-down"></i></a>
+                            <ul class="submenu">
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="single-blog.html">Single Blog</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Pages <i class="fas fa-angle-down"></i></a>
+                            <ul class="submenu">
+                                <li><a href="elements.html">Elements</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="background">
+        <div class="content-1">
+            <h1>Elements</h1>
+        </div>
+    </div>
+    <div class="some">
+    <h2>Text Sample</h2>
+    <p>Every avid independent filmmaker has <b>Bold</b> about making that Italic interest documentary, or short film to show off their creative prowess. Many 
+        <br>have great ideas and want to “wow” the <sup>Superscript</sup> scene, or video renters with their big project. But once you have the<sub>Subscript</sub> “in the can” (no easy 
+        <br>feat), how do you move from a <del>Strike</del> through of master DVDs with the <ins>“Underline”</ins> marked hand-written title inside a secondhand CD case, to a pile 
+        <br>of cardboard boxes full of shiny new, retail-ready DVDs, with UPC barcodes and polywrap sitting on your doorstep? You need to create eye-popping 
+        <br>artwork and have your project replicated. Using a reputable full service DVD Replication company like PacificDisc, Inc. to partner with is certainly a 
+        <br>helpful option to ensure a professional end result, but to help with your DVD replication project, here are 4 easy steps to follow for good DVD 
+        <br>replication results:</p>
+    </div>
+    <h1>Sample Buttons</h1>
+
+    <div class="button-group">
+      <button class="btn">Default</button>
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-success">Success</button>
+      <button class="btn btn-info">Info</button>
+      <button class="btn btn-warning">Warning</button>
+      <button class="btn btn-danger">Danger</button>
+      <button class="btn btn-link">Link</button>
+      <button class="btn btn-disabled">Disable</button>
+    </div>
+  
+    <div class="button-group">
+      <button class="btn btn-outline">Default</button>
+      <button class="btn btn-outline btn-primary">Primary</button>
+      <button class="btn btn-outline btn-success">Success</button>
+      <button class="btn btn-outline btn-info">Info</button>
+      <button class="btn btn-outline btn-warning">Warning</button>
+      <button class="btn btn-outline btn-danger">Danger</button>
+      <button class="btn btn-outline btn-link">Link</button>
+      <button class="btn btn-outline btn-disabled">Disable</button>
+    </div>
+  
+    <div class="button-group">
+      <button class="btn btn-rounded">Default</button>
+      <button class="btn btn-rounded btn-primary">Primary</button>
+      <button class="btn btn-rounded btn-success">Success</button>
+      <button class="btn btn-rounded btn-info">Info</button>
+      <button class="btn btn-rounded btn-warning">Warning</button>
+      <button class="btn btn-rounded btn-danger">Danger</button>
+      <button class="btn btn-rounded btn-link">Link</button>
+      <button class="btn btn-rounded btn-disabled">Disable</button>
+    </div>
+  
+    <div class="button-group">
+      <button class="btn btn-rounded btn-outline">Default</button>
+      <button class="btn btn-rounded btn-outline btn-primary">Primary</button>
+      <button class="btn btn-rounded btn-outline btn-success">Success</button>
+      <button class="btn btn-rounded btn-outline btn-info">Info</button>
+      <button class="btn btn-rounded btn-outline btn-warning">Warning</button>
+      <button class="btn btn-rounded btn-outline btn-danger">Danger</button>
+      <button class="btn btn-rounded btn-outline btn-link">Link</button>
+      <button class="btn btn-rounded btn-outline btn-disabled">Disable</button>
+    </div>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="contact-section">
+                <h3>Contact Us</h3>
+                <p>+555 0000 565</p>
+                <p>Demomail@gmail.Com</p>
+                <p>700, Green Lane, New York, USA</p>
+            </div>
+            <div class="services-section">
+                <h3>Our Services</h3>
+                <ul>
+                    <li>Pet Insurance</li>
+                    <li>Pet Surgeries</li>
+                    <li>Pet Adoption</li>
+                    <li>Dog Insurance</li>
+                    <li>Dog Insurance</li>
+                </ul>
+            </div>
+            <div class="quick-link-section">
+                <h3>Quick Link</h3>
+                <ul>
+                    <li>About Us</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms of Service</li>
+                    <li>Login info</li>
+                    <li>Knowledge Base</li>
+                </ul>
+            </div>
+            <div class="logo-section">
+                <img src="./logo header.png" alt="Anipact">
+                <p>239 E 5th St, New York NY 10003, 
+              <br>USA</p>
+                <div class="social-icons-row">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="dashed-line">
+        <div class="footer-bottom">
+            <p>
+                Copyright ©2025 All rights reserved | This template is made with 
+                <span class="heart">❤️</span> by 
+                <a href="https://colorlib.com" target="_blank" class="footer-link">Colorlib</a>
+            </p>
+        </div>
+    </footer>  
+  
+  </body>
+  </html>
+
+        

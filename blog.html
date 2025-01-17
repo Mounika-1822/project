@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+.background {
+    height: 400px;
+    background-image: url('./cat\ banner.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+        
+.content-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    }
+        
+.content-1 h1 {
+    color: white;
+    font-size: 4rem;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+.blog-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.blog-post {
+    width: 65%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 30px;
+    background-color: #fff;
+}
+
+.image-container-2 {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.image-container-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.date-badge {
+    position: absolute;
+    bottom: 35px;
+    left: 15px;
+    background-color: #ff5e3a;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.date-badge span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.date-badge small {
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+}
+
+.content-2 {
+    padding: 15px;
+}
+
+.content-2 h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.content-2 p {
+    font-size: 20px;
+    color: grey;
+}
+
+.sidebar {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 20px;
+    border: 1px solid #ff5e3a;
+    background: none;
+    color: #ff5e3a;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.search-bar button:hover {
+    background: #ff5e3a;
+    color: white;
+    transition: 0.3s;
+}
+
+.categories {
+    padding: 40px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: lightpink;
+}
+
+.categories h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    color: #333;
+}
+
+.categories ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.categories ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+.categories h3:hover{
+    color: #ff5e3a;
+} 
+.categories ul li:hover{
+    color: #ff5e3a;
+}  
+.blog-info-link {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    margin: 15px 0;
+    font-family: Arial, sans-serif;
+}
+
+.blog-info-link li {
+    display: flex;
+    align-items: center;
+}
+
+.blog-info-link li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s;
+}
+
+.blog-info-link li a:hover {
+    color: #ff5e3a;
+}
+
+.blog-info-link li i {
+    color: #ff5e3a;
+    font-size: 16px;
+}
+
+   </style>
+</head>
+<body>
+    <header class="header black-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="contact-info">
+                    <ul>
+                        <li><a href="#">+880 4664 216</a></li>
+                        <li><a href="#">Mon - Sat 10:00 - 7:00</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header class="header white-header sticky-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html"><img src="./logo header.png" alt="Logo"></a>
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li>
+                            <a href="#">Blog <i class="fas fa-angle-down"></i></a>
+                            <ul class="submenu">
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="single-blog.html">Single Blog</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Pages <i class="fas fa-angle-down"></i></a>
+                            <ul class="submenu">
+                                <li><a href="elements.html">Elements</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="background">
+        <div class="content-1">
+            <h1>Blog</h1>
+        </div>
+    </div>
+    <div class="blog-container">
+        <div class="blog-post">
+            <div class="image-container-2">
+                <img src="./single-1.png" alt="Blog Image">
+                <div class="date-badge">
+                    <span>15</span>
+                    <small>Jan</small>
+                </div>
+            </div>
+            <div class="content-2">
+                <h2>Google inks pact for new 35-storey office</h2>
+                <p>That dominion stars lights dominion divide years for fourth have don't stars is that he.
+                    <br>earth it first without heaven in place seed it second morning saying.
+                </p>
+                <ul class="blog-info-link">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-user"></i> Travel, Lifestyle     |
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-comments"></i> 03 Comments
+                        </a>
+                    </li>
+                </ul>   
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="search-bar">
+                <input type="text" placeholder="Search Keyword">
+                <button>SEARCH</button>
+            </div>
+            <div class="categories">
+                <h3>Category</h3>
+                <ul>
+                    <li>Restaurant food (37)</li>
+                    <li>Travel news (10)</li>
+                    <li>Modern technology (03)</li>
+                    <li>Product(11)</li>
+                    <li>Inspiration21</li>
+                    <li>Health Care(21)09</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="contact-section">
+                <h3>Contact Us</h3>
+                <p>+555 0000 565</p>
+                <p>Demomail@gmail.Com</p>
+                <p>700, Green Lane, New York, USA</p>
+            </div>
+            <div class="services-section">
+                <h3>Our Services</h3>
+                <ul>
+                    <li>Pet Insurance</li>
+                    <li>Pet Surgeries</li>
+                    <li>Pet Adoption</li>
+                    <li>Dog Insurance</li>
+                    <li>Dog Insurance</li>
+                </ul>
+            </div>
+            <div class="quick-link-section">
+                <h3>Quick Link</h3>
+                <ul>
+                    <li>About Us</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms of Service</li>
+                    <li>Login info</li>
+                    <li>Knowledge Base</li>
+                </ul>
+            </div>
+            <div class="logo-section">
+                <img src="./logo header.png" alt="Anipact">
+                <p>239 E 5th St, New York NY 10003, 
+              <br>USA</p>
+                <div class="social-icons-row">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="dashed-line">
+        <div class="footer-bottom">
+            <p>
+                Copyright ©2025 All rights reserved | This template is made with 
+                <span class="heart">❤️</span> by 
+                <a href="https://colorlib.com" target="_blank" class="footer-link">Colorlib</a>
+            </p>
+        </div>
+    </footer>  
+</body>
+</html>
+  
+
+                 
